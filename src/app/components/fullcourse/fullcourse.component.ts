@@ -10,6 +10,7 @@ declare var require: any;
 const FileSaver = require('file-saver');
 
 @Component({
+
   selector: 'app-fullcourse',
   templateUrl: './fullcourse.component.html',
   styleUrls: ['./fullcourse.component.css']
@@ -141,6 +142,7 @@ export class FullcourseComponent implements OnInit {
   }
 
   openChapter(chapterid : string)
+  
   {
     this.video = chapterid;
   }
