@@ -55,7 +55,7 @@ export class UserprofileComponent implements OnInit {
         $("#message").show();
         this.temp = true;
         $("#profilecard").show();
-        $("#profileform").hide();
+        $("#profileform").show();
         setTimeout(() => {
             this._router.navigate(['/userdashboard']);
           }, 6000);
