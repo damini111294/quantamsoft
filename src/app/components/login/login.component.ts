@@ -6,6 +6,7 @@ import { LoginService } from 'src/app/services/login.service';
 import * as $ from 'jquery';
 
 @Component({
+
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
@@ -67,6 +68,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser()
+  
   {
       this._service.loginUserFromRemote(this.user).subscribe(
         (data: any) => {

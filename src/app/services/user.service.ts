@@ -9,6 +9,7 @@ import { Wishlist } from '../models/wishlist';
 const NAV_URL = environment.apiURL;
 
 @Injectable({
+  
   providedIn: 'root'
 })
 export class UserService {

@@ -1,6 +1,7 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 //import * as $ from 'jquery';
+
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Observable } from 'rxjs';
 import { Course } from 'src/app/models/course';
@@ -40,6 +41,7 @@ export class CourselistComponent implements OnInit  {
   constructor(private _service : ProfessorService, private userService : UserService, private _router : Router) { }
 
  ngOnInit() 
+ 
  {
     this.loggedUser = JSON.stringify(sessionStorage.getItem('loggedUser')|| '{}');
     this.loggedUser = this.loggedUser.replace(/"/g, '');
