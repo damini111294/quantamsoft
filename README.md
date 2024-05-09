@@ -1,8 +1,8 @@
 # ElearningManagement ❤️
 
-![](https://img.shields.io/github/languages/count/gowthamrajk/ElearningManagementSystem)   ![](https://img.shields.io/github/languages/top/gowthamrajk/ElearningManagementSystem)
 
-### For more such developments, visit my [Portfolio](https://gowthamrajk.github.io)
+
+
 
 ### 🌎 Visit Demo : [Elearning Management System](https://youtu.be/-s_-_Tz866w)
 
