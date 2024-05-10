@@ -1,6 +1,5 @@
 # ElearningManagement ❤️
 
-![](https://img.shields.io/github/languages/count/gowthamrajk/ElearningManagementSystem)   ![](https://img.shields.io/github/languages/top/gowthamrajk/ElearningManagementSystem)
 
 
 ## 🔭 Features :
