@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddchapterComponent } from './components/addchapter/addchapter.component';
 import { AddcourseComponent } from './components/addcourse/addcourse.component';
 import { AddprofessorComponent } from './components/addprofessor/addprofessor.component';
+
 import { AdmindashboardComponent } from './components/admindashboard/admindashboard.component';
 import { ApprovalstatusComponent } from './components/approvalstatus/approvalstatus.component';
 import { CourselistComponent } from './components/courselist/courselist.component';
 import { FullcourseComponent } from './components/fullcourse/fullcourse.component';
 import { LoginComponent } from './components/login/login.component';
+
 import { MycoursesComponent } from './components/mycourses/mycourses.component';
 import { MywishlistComponent } from './components/mywishlist/mywishlist.component';
 import { ProfessordashboardComponent } from './components/professordashboard/professordashboard.component';
@@ -25,6 +27,7 @@ import { RouterGuard } from './guards/router.guard';
 import { UserGuard } from './guards/user.guard';
 
 const routes: Routes = [
+  
   {path:'',component:WelcomepageComponent},
   {path:'login',component:LoginComponent},
   {path:'registration',component:RegistrationComponent},
@@ -50,4 +53,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

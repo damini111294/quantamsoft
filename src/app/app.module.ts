@@ -3,6 +3,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
@@ -31,6 +32,7 @@ import { MywishlistComponent } from './components/mywishlist/mywishlist.componen
 import { WelcomepageComponent } from './components/welcomepage/welcomepage.component';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     LoginComponent,
@@ -55,6 +57,7 @@ import { WelcomepageComponent } from './components/welcomepage/welcomepage.compo
     MywishlistComponent,
     WelcomepageComponent
   ],
+  
   imports: [
     BrowserModule,
     FormsModule,
