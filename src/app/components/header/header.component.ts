@@ -48,6 +48,12 @@ export class HeaderComponent implements OnInit {
     //   this.title = "";
     // }
     
+    confirmLogout(): void{
+      const userConfirmed = window.confirm("Are you sure you want to log out?");
+      if (userConfirmed) {
+        this.logout();
+      }
+    }
 
   logout()
   {

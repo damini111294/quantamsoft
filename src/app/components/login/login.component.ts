@@ -11,7 +11,6 @@ import * as $ from 'jquery';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-
 export class LoginComponent implements OnInit {
 
   user = new User();
@@ -75,7 +74,6 @@ console: any;
   loginUser()
   
   {
-    
       this._service.loginUserFromRemote(this.user).subscribe(
         (data: any) => {
           console.log(data);

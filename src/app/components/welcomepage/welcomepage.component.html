@@ -1,3 +1,4 @@
+
 <div class="All">
 <div class="content">
 
@@ -5,11 +6,12 @@
     <div class="nav">
      <label></label>
      <div class="switchs">
-      <button style="font-weight: bold;" class="log" id="log" [routerLink]="['']"><i class="fa fa-home"></i>Home</button>
-      <!-- <button class="fa fa-home" [routerLink]="['/welcomepage']">New</button> -->
-      <button style="font-weight: bold;" class="log" id="log" onclick="location.href='#Our services';"><i class="fa fa-cog"></i> Services</button>
+
+      <button style="font-weight: bold;" class="log" id="log" [routerLink]="['']"><i class="fa fa-home"></i> Home</button>
+      <button style="font-weight: bold;" class="log" id="log" onclick="location.href='#scrollspyHeading1';"><i class="fa fa-cog"></i> Services</button>
       <button style="font-weight: bold;" class="log" id="log" [routerLink]="['/login']"><i class="fa fa-sign-in"></i> LOGIN</button>
       <button style="font-weight: bold;" class="create_acc" id="create_acc" [routerLink]="['/registration']"><i class="fa fa-user-plus"></i> CREATE ACCOUNT</button>
+      
     </div>
   </div>
   <div class="main">
@@ -55,26 +57,52 @@
 
 
 <footer>
+
+  
   <div class="footer-container">
       <div class="footer-section">
-          <h3>Get to Know Us</h3>
-          <ul>
-              <li><a [routerLink]="['/aboutus']">About Us</a></li>
-              <li><a [routerLink]="['/referearn']">Refer and earn </a></li>
-              <li><a [routerLink]="['/jobs']">jobs </a></li>
-              <li><a [routerLink]="['/placements']">Placement</a></li>
+        <h3 style="position:relative; left: -40px;">Get to Know Us</h3>
+          <ul style="list-style: none; display: block; float: left;">
+           
+              <li style="top:-3px;"><a [routerLink]="['/aboutus']">About Us</a></li>
+              <li style="top:-3px;"><a [routerLink]="['/referearn']">Refer and earn </a></li>
+              <li style="top:-3px;"><a [routerLink]="['/jobs']">jobs </a></li>
+              <li style="top:-3px;"><a [routerLink]="['/placements']">Placement</a></li>
           </ul>
+
       </div>
       <div class="footer-section">
-          <h3>Connect with Us</h3>
-          <ul>
+          <h3 style="position:relative; left: -40px;">Connect with Us</h3>
+          <ul style="list-style: none; display: block; float: left;">
               <li><a href="#">Facebook</a></li>
               <li><a href="#">Twitter</a></li>
               <li><a href="#">Instagram</a></li>
           </ul>
       </div>
       <div class="footer-section">
-          <h3>Our services</h3>
+          
+
+
+        <h3 id="scrollspyHeading1" style="position:relative; left: -40px;">Our services</h3>
+        <ul style="list-style: none; display: block; float: left;">
+          <li><a [routerLink]="['/registration']">Hire From Us</a></li>
+          <li><a [routerLink]="['/review']">Reviews</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=20.923377846140507,77.76937754212156" target="_blank">Company Location</a></li>
+          <li><a [routerLink]="['/privacypolicy']">Privacy Policy</a></li>
+          <li><a [routerLink]="['/termcondition']">Terms & Condition</a></li>
+          <li><a [routerLink]="['/events']">Events</a></li>
+        </ul>
+
+     
+        
+
+        
+
+
+
+          <!-- <h3 id="scrollspyHeading1">Our services</h3>
+
+
           <ul>
               <li><a [routerLink]="['/registration']">Hire From Us</a></li>
               <li><a [routerLink]="['/review']">Reviews</a></li>
@@ -83,13 +111,13 @@
             
               <li><a [routerLink]="['/termcondition']">Terms & condition  </a></li>
           
-              <li><a [routerLink]="['/events']">Events  </a></li>
+              <li><a [routerLink]="['/events']">Events  </a></li> -->
               
               
-          </ul>
+          <!-- </ul> -->
       </div>
       <div class="footer-section">
-          <h3>Contact Us </h3>
+          <h3 style="position:relative; left: -40px;">Contact Us</h3>
           <ul>
               <li>
                 
@@ -116,7 +144,7 @@
 
 
 
-<!-- <main id="main">
+ <main id="main">
 <section id="services" class="services section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
@@ -146,6 +174,6 @@
     </div>
   </div>
 </section>
-</main> -->
+</main> 
 </div>
-<app-footer> </app-footer>
+<app-footer> </app-footer> 
