@@ -20,6 +20,7 @@ export class RegistrationComponent implements OnInit {
 
   userRegistrationAlertShown = false;
   professorRegistrationAlertShown = false;
+  isuseremailVal=false;
 
   constructor(private _registrationService : RegistrationService, private _professorService : ProfessorService, private _router : Router) { }
 
@@ -105,20 +106,25 @@ export class RegistrationComponent implements OnInit {
    // If all checks pass, return true
    
  }
-
+ showAlert1(message: string): void {
+  if (!this.isuseremailVal) {
+    alert(message);
+    this.isuseremailVal=true;
+  }
+}
  registerUser(): void {
   if (!this.termsAndConditionsChecked) {
    this.showAlert("Please agree to the terms and conditions to register");
     console.log('Please agree to the terms and conditions to register.');
    
   }
-
+  
  else if (!this.isPasswordValid1(this.user.password)) {
   this.showAlert("Please enter valid password");
     console.log('Please enter valid password.');
     
   }else if (!this.isuseremailValid()) {
-    this.showAlert("Enter all details");
+    this.showAlert1("Enter all details");
     console.log('Please enter all details.');
     
   }else{
@@ -238,7 +244,7 @@ export class RegistrationComponent implements OnInit {
         this.showAlert("Please enter a valid password");
         console.log('Please enter a valid password.');
       } else if (!this.isproffesoremailValid()) {
-        this.showAlert("Please enter all values");
+        this.showAlert1("Please enter all values");
         console.log('Please enter a valid professor email.');
       } else {
         this._registrationService.registerProfessorFromRemote(this.professor).subscribe(
