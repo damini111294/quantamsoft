@@ -19,11 +19,12 @@ export class UserprofileComponent implements OnInit {
   temp: boolean = false;
 
 
-   profileDetails : Observable<User[]> | undefined;
+  profileDetails : Observable<User[]> | undefined;
   user: User = new User;
   msg = ' ';
   currRole = '';
-   loggedUser = '';
+  loggedUser = '';
+
   // temp = false;
 
   constructor(private _service: UserService, private activatedRoute: ActivatedRoute, private _router : Router) { }

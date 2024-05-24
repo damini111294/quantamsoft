@@ -18,6 +18,7 @@ export class ProfessorprofileComponent implements OnInit {
   currRole = '';
   loggedUser = '';
   temp = false;
+  professorname ='';
 
   constructor(private _service: ProfessorService, private activatedRoute: ActivatedRoute, private _router : Router) { }
 
@@ -25,9 +26,13 @@ export class ProfessorprofileComponent implements OnInit {
   {
     this.loggedUser = JSON.stringify(sessionStorage.getItem('loggedUser')|| '{}');
     this.loggedUser = this.loggedUser.replace(/"/g, '');
+   
+    this.professorname = JSON.stringify(sessionStorage.getItem('professorname')|| '{}');
+    this.professorname = this.professorname.replace(/"/g, '');
 
     this.currRole = JSON.stringify(sessionStorage.getItem('ROLE')|| '{}'); 
     this.currRole = this.currRole.replace(/"/g, '');
+
 
     $("#profilecard").show();
     $("#profileform").hide();
@@ -44,6 +49,8 @@ export class ProfessorprofileComponent implements OnInit {
   {
     this.profileDetails = this._service.getProfileDetails(this.loggedUser);
     console.log(this.profileDetails);
+
+
   }
 
   // getUserName(loggedUser : string)

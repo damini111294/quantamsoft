@@ -17,6 +17,8 @@ export class HeaderComponent implements OnInit {
   loggedUser = '';
   currRole = '';
   title = '';
+  username ='';
+  professorname = '';
 
   constructor(private _service: UserService, activatedRoute: ActivatedRoute, private _router : Router) { }
 
@@ -24,6 +26,12 @@ export class HeaderComponent implements OnInit {
   {
     this.loggedUser = JSON.stringify(sessionStorage.getItem('loggedUser')|| '{}');
     this.loggedUser = this.loggedUser.replace(/"/g, '');
+
+    this.username = JSON.stringify(sessionStorage.getItem('username')|| '{}');
+    this.username = this.username.replace(/"/g, '');
+   
+    this.professorname = JSON.stringify(sessionStorage.getItem('professorname')|| '{}');
+    this.professorname = this.professorname.replace(/"/g, '');
 
     this.currRole = JSON.stringify(sessionStorage.getItem('ROLE')|| '{}'); 
     this.currRole = this.currRole.replace(/"/g, '');
@@ -39,6 +47,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+   
     // else if(this.currRole === "Home"){
     //   this.title = "";
 
@@ -60,6 +69,8 @@ export class HeaderComponent implements OnInit {
     sessionStorage.clear();
     this._router.navigate(['/login']);
   }
+
+  
 
   navigateHome()
   {
@@ -94,4 +105,5 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+
 
